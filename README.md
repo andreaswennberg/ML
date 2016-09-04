@@ -105,3 +105,73 @@ Anomaly can be seen as a classification problem or a clustering problem. (Findin
 Any rich representation of a complex instance requires a lot of features. Doing something with data is hard.
 
 Dimensionality reduction techniques reduce the number of dimensions and make it much more efficient to deal with the data.
+
+### Fraud Detection Case
+
+Think about variables. Here are some interesting parts:
+
+Amount spent
+IP address
+Number of failed attempts
+Time since last transaction
+Location of transaction
+
+The list of these are the feature vectors.
+
+We don't know what these values will be, but we will know what range the value will be in.
+
+Amount spent [0, infinity]
+IP address [all IP addresses in the world]
+Number of failed attempts [0, 1, 2]
+Time since last transaction [0, 1, 2]
+Location of transaction [Stockholm, Uppsala]
+
+We can't know what the value is beforehand.
+
+A random variable is a variable whose value is subject to variations due to chance. - Stochastic variable.
+
+### Random Values
+Discrete - integer values
+Continuous - any value
+Categorical - can take one of a limited, fixed set of values.
+
+Categories/group.
+
+A statistical experiment. We know the possible outcomes beforehand.
+
+Uniform probability distribution: has a known function.
+
+The normal distribution - occurs a lot in natural phenomena.
+
+A measurement is a random variable. most of the measurements would be concentrated near a central point.
+
+P(A|B) = P(A and P)/ P(B)
+What is the probability of A given that B.
+
+A priori probability - stat before we have an evidence that outcome.
+A posterio probability
+
+After the fact takes into account more information and are therefore more insightful.
+
+Naive Bayes is called naive because it assumes the features are independent of each other.
+
+### K-Nearest NEIGHBOURS
+
+We represent all emails as points in a hypercube.
+
+Measure the distance between the different cases.
+
+Find the K Nearest Neighbors. Basically, plot out all over points in a feature space. Plot out the problem instance.
+
+Dimensionality - length of the feature.
+Vector - number of coordinates needed to express each point.
+
+Feature extraction: for instance using principal components analysis or hashing.
+
+Euclidean distance only works with continuous variables.
+
+### Support Vector Machines
+
+A support vector machine is used to build binary classifiers.
+
+A support vector machine is a supervised machine-learning approach used to build linear non-probabilistic binary classifiers.
